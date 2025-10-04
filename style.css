@@ -1,0 +1,209 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #007bff;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contactForm button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+#todoInput {
+  width: 70%;
+  padding: 10px;
+}
+
+#todo button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#todo button:hover {
+  background-color: #0056b3;
+}
+
+#todo-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#todo-list li {
+  background-color: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-list li button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#gallery input {
+  width: 70%;
+  padding: 10px;
+}
+
+#gallery button {
+  padding: 10px 15px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#gallery button:hover {
+  background-color: #138496;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+
+.quiz-question {
+  margin-bottom: 20px;
+}
+
+.quiz-question p {
+  font-weight: bold;
+}
+
+#quizForm button {
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#quizForm button:hover {
+  background-color: #e0a800;
+}
+
+#quizResult {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #todoInput,
+  #gallery input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+#joke {
+  text-align: center;
+}
+
+#joke button {
+  background-color: #6f42c1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#joke button:hover {
+  background-color: #5a32a3;
+}
