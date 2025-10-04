@@ -1,0 +1,77 @@
+
+
+<header>My Interactive Web Project</header>
+
+<nav>
+  <a href="#contact">Contact Form</a>
+  <a href="#todo">To-Do List</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<main>
+
+  <section id="contact">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <span id="formError" class="error"></span>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <input type="text" id="todoInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="todo-list"></ul>
+  </section>
+
+  
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <input type="text" id="imgUrl" placeholder="Paste image URL">
+    <button onclick="addImage()">Add Image</button>
+    <div class="gallery" id="galleryContainer"></div>
+  </section>
+
+ 
+  <section id="quiz">
+    <h2>JavaScript Quiz</h2>
+    <form id="quizForm">
+      <div class="quiz-question">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label><br>
+        <label><input type="radio" name="q1" value="b"> High Text Machine Language</label><br>
+        <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>2. What is the correct syntax for referring to an external script called "xxx.js"?</p>
+        <label><input type="radio" name="q2" value="a"> &lt;script href="xxx.js"&gt;</label><br>
+        <label><input type="radio" name="q2" value="b"> &lt;script name="xxx.js"&gt;</label><br>
+        <label><input type="radio" name="q2" value="c"> &lt;script src="xxx.js"&gt;</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>3. Inside which HTML element do we put the JavaScript?</p>
+        <label><input type="radio" name="q3" value="a"> &lt;js&gt;</label><br>
+        <label><input type="radio" name="q3" value="b"> &lt;scripting&gt;</label><br>
+        <label><input type="radio" name="q3" value="c"> &lt;script&gt;</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+      <p id="quizResult"></p>
+    </form>
+  </section>
+
+  
+  <section id="joke">
+    <h2>Get a Random Joke</h2>
+    <button onclick="fetchJoke()">Fetch Joke</button>
+    <p id="jokeDisplay" style="margin-top: 10px; font-style: italic;"></p>
+  </section>
+</main>
